@@ -1,0 +1,153 @@
+.Experience {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Experience .container {
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+
+  .firstExpSquare {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -2%;
+    width: 129.71px;
+    height: 249px;
+    opacity: 0px;
+    transform: rotate(18deg);
+  }
+  .secondExpSquare {
+    z-index: -1;
+    position: absolute;
+    bottom: -30%;
+    left: -3%;
+    width: 129.71px;
+    height: 249px;
+    transform: rotate(148deg);
+  }
+}
+.Experience .container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 90px;
+  .specialHeading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #0c96e2;
+  }
+
+  .expTitle {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+  }
+}
+
+.expDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .expLeft {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .expRight {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .detailsChild {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    h3 {
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      color: #344054;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      color: #98a2b3;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .expDetails {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .expLeft {
+    flex-direction: column;
+    .expFrame {
+      display: none;
+    }
+  }
+  .expRight {
+    flex-direction: column;
+    .expFrame {
+      display: none;
+    }
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .Experience .container .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .specialHeading {
+      font-size: 16px;
+    }
+  }
+  .expTitle {
+    font-family: Poppins;
+    font-size: 25px !important;
+  }
+  .details {
+    h3 {
+      font-family: Poppins;
+      font-size: 18px !important;
+      color: #344054;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 14px !important;
+      color: #98a2b3;
+    }
+  }
+  .firstExpSquare {
+    right: 10% !important;
+  }
+  .secondExpSquare {
+    left: 20% !important;
+    bottom: -14% !important;
+    opacity: 0.8 !important;
+  }
+}

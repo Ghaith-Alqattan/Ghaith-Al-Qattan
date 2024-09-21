@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+
+.darkFontColor {
+  color: white;
+}
+nav a.active {
+  color: #0c96e2 !important;
+}
+.navMenu li.active {
+  background-color: #0c96e2;
+  a {
+    color: white;
+  }
+}
+
+nav {
+  background-color: white;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.navMenu {
+  display: none;
+  position: fixed;
+  top: 86px;
+  transform: translateX(-250%);
+  height: 100vh;
+  transition: all 0.4s ease-in-out;
+  z-index: 101;
+  background-color: #fffefe;
+}
+nav .container {
+  width: 90vw;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+nav a {
+  color: #1d2130;
+}
+.links li:hover a {
+  color: #0c96e2;
+}
+.navMenu li:hover {
+  background-color: #0c96e2;
+  a {
+    color: white;
+  }
+}
+.container h1 {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: bold;
+}
+.container h1:not(span) {
+  color: #1d2130;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.logo span {
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: bold;
+}
+.container .logo span:nth-child(1) {
+  font-family: 'IM Fell French Canon S', serif;
+  font-weight: bold;
+  color: #0c96e2;
+}
+.menuIcon {
+  display: none;
+}
+nav .themeMode img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  nav .container .links {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-150%);
+    width: 50%;
+    text-align: center;
+  }
+
+  .navMenu li {
+    padding: 20%;
+  }
+
+  .navMenu li a {
+    color: #1d2130;
+  }
+  nav .container.active .links {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}

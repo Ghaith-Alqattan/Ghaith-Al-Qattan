@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+.riskContactContainer {
+  background: #583fbc;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 32px;
+  padding: 100px 130px;
+  position: relative;
+
+  .riskLines {
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    gap: 0px;
+    opacity: 0.25px;
+  }
+}
+.riskContactContainer::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  gap: 0px;
+  border-radius: 32px;
+  transform: rotate(-1.34deg);
+  background: #0c96e2;
+  z-index: -1;
+}
+.riskText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 589.18px;
+  }
+}
+.riskH1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: left;
+  color: #ffffff;
+}
+.riskDesc {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #ffffff;
+
+  .riskSpan {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.riskButton {
+  position: relative;
+  width: 155px;
+  height: 50px;
+  padding: 12px 29.97px 14px 40.59px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0c96e2;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+
+  img {
+    transform: rotate(90deg);
+    width: 16px;
+    height: 13.57px;
+  }
+}
+.riskButton::after {
+  position: absolute;
+  border-radius: 6px;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.riskButton:hover {
+  background: #1c8bc7 !important;
+  color: white !important;
+}
+
+.riskButton:hover::after {
+  transform: rotate(10deg);
+  background-color: rgb(40, 60, 133);
+}
+
+@media screen and (max-width: 992px) {
+  .riskContactContainer {
+    padding: 20px;
+  }
+  .riskLines {
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+  }
+  .riskContactContainer:after {
+    content: '';
+    transform: rotate(-3deg);
+  }
+  .riskText {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    .left {
+      width: 90%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .riskH1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .riskDesc {
+    font-size: 14px;
+    text-align: center;
+
+    .riskSpan {
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  .riskButton {
+    height: 50px;
+    padding: 12px 29.97px 14px 40.59px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #0c96e2;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+
+    img {
+      transform: rotate(90deg);
+      width: 16px;
+      height: 13.57px;
+    }
+  }
+}
