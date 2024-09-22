@@ -27,6 +27,8 @@ import telegram from '../../assets/FooterAssets/Telegram-removebg-preview.png'
 import leon from "../../assets/ProjectsAssets/Leon Project Image.png"
 import Trippy from "../../assets/ProjectsAssets/Trippy Project Image.png"
 import engBurger from "../../assets/ProjectsAssets/Eng Burger Project Image.png"
+import Edugar from "../../assets/ProjectsAssets/Edugar Image.png"
+import DashStack from "../../assets/ProjectsAssets/dashstack.png"
 import './Home.css'
 
 const Home = () => {
@@ -111,7 +113,7 @@ const Home = () => {
                     {
                         projectImage: Trippy,
                         projectName: 'Trips Platform',
-                        projectLanguages: 'Html-Css3-Vanilla javscript',
+                        projectLanguages: 'Html-Css3-javscript',
                     },
                     {
                         projectImage: engBurger,
@@ -119,20 +121,15 @@ const Home = () => {
                         projectLanguages: 'Html-Css3-BootStrap',
                     },
                     {
-                        projectImage: Trippy,
-                        projectName: 'Trips Platform',
-                        projectLanguages: 'Html-Css3-Vanilla javscript',
+                        projectImage: Edugar,
+                        projectName: 'Educational Platform',
+                        projectLanguages: 'Html-Css3-javscript',
                     },
                     {
-                        projectImage: engBurger,
-                        projectName: 'Restaurant',
-                        projectLanguages: 'Html-Css3-BootStrap',
-                    },
-                    {
-                        projectImage: leon,
-                        projectName: 'Business Platform',
-                        projectLanguages: 'Html-Css3-Bootstrap',
-                    },
+                        projectImage: DashStack,
+                        projectName: 'E-Commerence',
+                        projectLanguages: 'Html-Css3-JavaScript',
+                    }
                 ]}
                 GithubUrl="https://github.com/Ghaith-Alqattan"
             />

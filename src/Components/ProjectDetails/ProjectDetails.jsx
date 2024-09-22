@@ -93,16 +93,20 @@ const ProjectDetails = ({ projects }) => {
                         >
                             Basic Languages: {project.projectLanguages}
                         </div>
-                        <div
-                            className={theme === 'dark' ? 'frameWork darkFont' : 'frameWork'}
-                        >
-                            Framework: {project.framework}
-                        </div>
-                        <div
-                            className={theme === 'dark' ? 'Libraries darkFont' : 'Libraries'}
-                        >
-                            Libraries: {project.libraries}
-                        </div>
+                        {
+                            project.framework === "" ? "" : <div
+                                className={theme === 'dark' ? 'frameWork darkFont' : 'frameWork'}
+                            >
+                                Framework: {project.framework}
+                            </div>
+                        }
+                        {
+                            project.libraries === "" ? "" : <div
+                                className={theme === 'dark' ? 'Libraries darkFont' : 'Libraries'}
+                            >
+                                Libraries: {project.libraries}
+                            </div>
+                        }
                     </div>
                     <a
                         href={project.githubUrl}

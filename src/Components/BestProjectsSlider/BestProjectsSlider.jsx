@@ -6,23 +6,24 @@ import ThemeContext from '../Theme/Theme'
 
 const BestProjectsSlider = ({ projects }) => {
     const { theme } = useContext(ThemeContext)
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentPage, setCurrentPage] = useState(0)
     const itemsPerPage = 3
+    const pageCount = Math.ceil(projects.length / itemsPerPage)
 
     const next = () => {
-        if (currentIndex + itemsPerPage < projects.length) {
-            setCurrentIndex(currentIndex + itemsPerPage)
+        if (currentPage + 1 < pageCount) {
+            setCurrentPage(currentPage + 1)
         }
     }
 
     const prev = () => {
-        if (currentIndex - itemsPerPage >= 0) {
-            setCurrentIndex(currentIndex - itemsPerPage)
+        if (currentPage > 0) {
+            setCurrentPage(currentPage - 1)
         }
     }
 
-    const isNextDisabled = currentIndex + itemsPerPage >= projects.length
-    const isPrevDisabled = currentIndex === 0
+    const isNextDisabled = currentPage >= pageCount - 1
+    const isPrevDisabled = currentPage === 0
 
     return (
         <div className="bestProjects">
@@ -51,40 +52,32 @@ const BestProjectsSlider = ({ projects }) => {
                         </button>
                     </div>
                 </div>
-                <div
-                    className="projectsSlider"
-                    style={{
-                        transform: `translateX(-${(currentIndex / projects.length) * 100
-                            }%)`,
-                        display: 'flex',
-                    }}
-                >
-                    {projects.map((project, index) => (
-                        <div className="card" key={index}>
-                            <img src={project.projectImage} alt="" />
-                            <div className="content">
-                                <div className="text">
-                                    <h3
-                                        className={
-                                            theme === 'dark' ? 'projectName darkFont' : 'projectName'
-                                        }
+                <div className="projectsSlider">
+                    {projects.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
+                        .map((project, index) => (
+                            <div className="card" key={index}>
+                                <img src={project.projectImage} alt="" />
+                                <div className="content">
+                                    <div className="text">
+                                        <h3
+                                            className={theme === 'dark' ? 'projectName darkFont' : 'projectName'}
+                                        >
+                                            {project.projectName}
+                                        </h3>
+                                        <p className={theme === 'dark' ? 'darkFont' : ''}>
+                                            {project.projectLanguages}
+                                        </p>
+                                    </div>
+                                    <a
+                                        href={project.demoUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
-                                        {project.projectName}
-                                    </h3>
-                                    <p className={theme === 'dark' ? 'darkFont' : ''}>
-                                        {project.projectLanguages}
-                                    </p>
+                                        <img src={urlIcon} alt="" />
+                                    </a>
                                 </div>
-                                <a
-                                    href={project.demoUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img src={urlIcon} alt="" />
-                                </a>
                             </div>
-                        </div>
-                    ))}
+                        ))}
                 </div>
             </div>
         </div>

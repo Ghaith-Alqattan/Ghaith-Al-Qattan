@@ -10,6 +10,8 @@ import telegram from '../../assets/FooterAssets/Telegram-removebg-preview.png'
 import leon from "../../assets/ProjectsAssets/Leon Project Image.png"
 import Trippy from "../../assets/ProjectsAssets/Trippy Project Image.png"
 import engBurger from "../../assets/ProjectsAssets/Eng Burger Project Image.png"
+import Edugar from "../../assets/ProjectsAssets/Edugar Image.png"
+import DashStack from "../../assets/ProjectsAssets/dashstack.png"
 const projects = [
     {
         projectImage: leon,
@@ -47,59 +49,26 @@ const projects = [
         githubUrl: 'https://github.com/Ghaith-Alqattan/Eng-Burger',
     },
     {
-        projectImage: Trippy,
-        projectName: 'Trippy Tourism Platform',
-        date: '29/7/2024',
-        demoUrl: 'https://trippy-pink.vercel.app/',
-        description: 'A global platform that provides electronic tourism services around the world, including plane and hotel reservations with the most expensive and luxurious ratings.',
+        projectImage: Edugar,
+        projectName: 'Edugar Educational Platform',
+        date: '20/6/2024',
+        demoUrl: 'https://edujar-ghaith-alqattan.vercel.app/',
+        description: 'Designing a global educational platform that seeks to achieve the dreams and goals of passionate students from all over the world and opens horizons in the sea of ​​knowledge',
+        projectLanguages: 'HTML, CSS, JavaScript',
+        libraries: 'React.js',
+        githubUrl: 'https://github.com/Ghaith-Alqattan/edujar',
+    },
+    {
+        projectImage: DashStack,
+        projectName: 'DashStack E-Commernce',
+        date: '5/9/2024',
+        demoUrl: 'https://dashstack-ghaith-alqattan.vercel.app/',
+        description: 'A buying and selling platform between users who subscribe to this application with their own accounts, with easy access to products, additions, modifications, and deletions',
         projectLanguages: 'HTML, CSS, JavaScript',
         framework: 'Tailwind',
-        libraries: 'React.js',
-        githubUrl: 'https://github.com/Ghaith-Alqattan/Trippy',
-    },
-    {
-        projectImage: engBurger,
-        projectName: 'ENG Burger Restaurant',
-        date: '13/5/2023',
-        demoUrl: 'https://ghaith-alqattan.github.io/Eng-Burger/',
-        description: 'An electronic platform for ENG Burger Restaurant that links the electronic service with the restaurant’s distinguished services, such as delivery, special requests, reservations, and appointments.',
-        projectLanguages: 'HTML, CSS, BootStrap',
-        framework: 'Bootstrap',
-        libraries: '',
-        githubUrl: 'https://github.com/Ghaith-Alqattan/Eng-Burger',
-    },
-    {
-        projectImage: leon,
-        projectName: 'Leon Business Company',
-        date: '10/3/2022',
-        demoUrl: 'https://ghaith-alqattan.github.io/Leon-Company/',
-        description:
-            ' A global technology company that provides all electronic services with very high quality and ideal efficiency. It contains all web services such as back-end, front-end, UI and UX, and provides Photoshop services and creative designs.',
-        projectLanguages: 'HTML, Pure CSS3 ',
-        framework: '',
-        libraries: '',
-        githubUrl: 'https://github.com/Ghaith-Alqattan/Leon-Company',
-    },
-    {
-        projectName: 'Education Platform7',
-        date: '29/7/2024',
-        demoUrl: 'https://example.com/demo2',
-        description: 'A platform for interactive learning.',
-        projectLanguages: 'HTML, CSS, JavaScript',
-        framework: 'Bootstrap',
-        libraries: 'React.js',
-        githubUrl: 'https://github.com/Ghaith-Alqattan/edujar',
-    },
-    {
-        projectName: 'Education Platform8',
-        date: '29/7/2024',
-        demoUrl: 'https://example.com/demo2',
-        description: 'A platform for interactive learning.',
-        projectLanguages: 'HTML, CSS, JavaScript',
-        framework: 'Bootstrap',
-        libraries: 'React.js',
-        githubUrl: 'https://github.com/Ghaith-Alqattan/edujar',
-    },
+        libraries: 'React.Js',
+        githubUrl: 'https://github.com/Ghaith-Alqattan/DashStack',
+    }
 ]
 
 const Details = () => {
