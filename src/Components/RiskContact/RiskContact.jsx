@@ -5,7 +5,7 @@ import lines from '../../assets/RiskContactAssets/LInes (1).svg'
 const RiskContact = () => {
     const scrollToTop = () => {
         window.scrollTo({
-            top: 3200,
+            top: 4800,
             behavior: 'smooth',
         })
     }

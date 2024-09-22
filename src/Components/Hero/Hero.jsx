@@ -37,7 +37,8 @@ const Hero = ({
                                     {desc}
                                 </p>
                                 <a
-                                    download={GhaithCv}
+                                    href={GhaithCv}
+                                    download
                                     className={theme === 'dark' ? 'darkButton darkFont cv' : 'cv'}
                                 >
                                     Download Cv

@@ -127,7 +127,7 @@ const Home = () => {
                     },
                     {
                         projectImage: DashStack,
-                        projectName: 'E-Commerence',
+                        projectName: 'E-Commerce',
                         projectLanguages: 'Html-Css3-JavaScript',
                     }
                 ]}

@@ -60,7 +60,7 @@ const projects = [
     },
     {
         projectImage: DashStack,
-        projectName: 'DashStack E-Commernce',
+        projectName: 'DashStack E-Commerce',
         date: '5/9/2024',
         demoUrl: 'https://dashstack-ghaith-alqattan.vercel.app/',
         description: 'A buying and selling platform between users who subscribe to this application with their own accounts, with easy access to products, additions, modifications, and deletions',

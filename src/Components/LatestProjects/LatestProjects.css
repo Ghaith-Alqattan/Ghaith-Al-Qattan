@@ -181,9 +181,11 @@
     h3 {
       color: #1d2130;
       font-size: 18px !important;
+      text-align: center !important;
     }
     p {
       font-size: 14px !important;
+      text-align: center !important;
     }
     .urlIcon {
       width: 25px !important;
