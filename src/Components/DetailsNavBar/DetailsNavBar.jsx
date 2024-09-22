@@ -3,14 +3,14 @@ import { IoCloseOutline, IoMenuOutline } from 'react-icons/io5'
 import ThemeContext from '../Theme/Theme'
 import moon from '../../assets/NavBarAssets/moon.png'
 import sun from '../../assets/NavBarAssets/Sun_fill.png'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import '../NavBar/NavBar.css'
 const DetailsNavBar = ({ logoLeftSide, logoRightSide, links }) => {
     const [closed, setClosed] = useState(true)
     const { theme, setTheme } = useContext(ThemeContext)
     const [themeIcon, setThemeIcon] = useState(moon)
     const [activeLink, setActiveLink] = useState('Home')
-
+    const navigate = useNavigate()
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme')
         if (savedTheme) {
@@ -70,6 +70,7 @@ const DetailsNavBar = ({ logoLeftSide, logoRightSide, links }) => {
             setActiveLink(linkText)
             setClosed(true)
         }, 200)
+        document.body.style.overflow = 'auto'
     }
 
     return (
@@ -84,16 +85,16 @@ const DetailsNavBar = ({ logoLeftSide, logoRightSide, links }) => {
                     </h1>
                     <ul className="links">
                         {links.map((element, index) => (
-                            <li className={'link-' + element.linkText} key={index}>
-                                <Link
-                                    to="/"
-                                    className={`${theme === 'dark' ? 'darkFontColor' : ''} ${activeLink === element.linkText ? 'active' : ''
-                                        }`}
-                                    onClick={() => scrollToTop(element.pos, element.linkText)}
-                                >
-                                    {element.linkText}
-                                </Link>
-                            </li>
+
+                            <Link
+                                to="/"
+                                className={`${theme === 'dark' ? 'darkFontColor' : ''} ${activeLink === element.linkText ? 'active' : ''
+                                    } ${'link-' + element.linkText}`}
+                                onClick={() => scrollToTop(element.pos, element.linkText)}
+                                key={index}
+                            >
+                                {element.linkText}
+                            </Link>
                         ))}
                     </ul>
                     <div className="icons">

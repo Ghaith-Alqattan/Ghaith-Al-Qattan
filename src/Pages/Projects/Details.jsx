@@ -29,7 +29,7 @@ const projects = [
         projectImage: Trippy,
         projectName: 'Trippy Tourism Platform',
         date: '29/7/2024',
-        demoUrl: 'https://trippy-pink.vercel.app/',
+        demoUrl: 'https://trippy-ghaith-alqattan.vercel.app/',
         description: 'A global platform that provides electronic tourism services around the world, including plane and hotel reservations with the most expensive and luxurious ratings.',
         projectLanguages: 'HTML, CSS, JavaScript',
         framework: 'Tailwind',
