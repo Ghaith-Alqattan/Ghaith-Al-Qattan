@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './NavBar.css'
 import { IoCloseOutline, IoMenuOutline } from 'react-icons/io5'
 import ThemeContext from '../Theme/Theme'
-import moon from '../../assets/NavBarAssets/moon.png'
+import moon from '../../assets/NavBarAssets/moon.webp'
 import sun from '../../assets/NavBarAssets/Sun_fill.png'
 import { Link } from 'react-router-dom'
 

@@ -136,8 +136,8 @@
 .rightSide .ghaith {
   position: absolute;
   z-index: 5;
-  width: 380px;
-  top: -130px;
+  width: 350px;
+  top: -10px;
 }
 .heroEnd {
   position: relative;
@@ -203,8 +203,8 @@
     top: -50px;
   }
   .rightSide .ghaith {
-    width: 80%;
-    top: -160px;
+    width: 280px;
+    top: -110px;
   }
   .rightSide .square {
     height: 250px;
@@ -222,7 +222,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
   .rightSide .ghaith {
     width: 50%;
-    top: -200px;
+    top: -180px;
   }
   .hero {
     top: -20px;
@@ -273,7 +273,7 @@
 @media (min-width: 993px) and (max-width: 1199px) {
   .rightSide .ghaith {
     width: 40%;
-    top: -220px;
+    top: -180px;
   }
   .hero {
     top: -20px;

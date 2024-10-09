@@ -9,9 +9,20 @@
   font-style: normal;
   transition: all 0.4s ease-in-out;
 }
+*::selection {
+  background-color: #131922;
+  color: #0673ad;
+}
+img,
+a,
+button {
+  user-select: none !important;
+}
+
 button {
   border: none;
 }
+
 .darkButton {
   background: #0c96e299 !important;
 }

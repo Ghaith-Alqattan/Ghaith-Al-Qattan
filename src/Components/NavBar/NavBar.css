@@ -56,9 +56,10 @@ nav a {
     color: white;
   }
 }
-.container h1 {
+.container .logo {
   font-family: 'IM Fell French Canon SC', serif;
   font-weight: bold;
+  user-select: none;
 }
 .container h1:not(span) {
   color: #1d2130;
