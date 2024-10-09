@@ -9,13 +9,12 @@ import RiskContact from '../../Components/RiskContact/RiskContact'
 import ScrollToTopButton from '../../Components/goTopButton/ScrollToTopButton'
 import Footer from '../../Components/Footer/Footer'
 
-import moonIcon from '../../assets/NavBarAssets/moon.png'
 import heroLines from '../../assets/heroAssets/Lines.svg'
 import heroGradiant from '../../assets/heroAssets/Blur Gradient.png'
 import DarkGradiant from '../../assets/heroAssets/Dark Blur Gradient (1).png'
 import heroCircle from '../../assets/heroAssets/Circle.png'
 import heroSquares from '../../assets/heroAssets/squers  - option 1.svg'
-import ghaithImage from '../../assets/heroAssets/DSC_7557-removebg.png'
+import ghaithImage from '../../assets/heroAssets/DSC_7557-removebg.webp'
 import ThemeContext from '../../Components/Theme/Theme'
 import phone from '../../assets/ContactAssets/Vector (1).png'
 import mail from '../../assets/ContactAssets/Vector (2).png'
@@ -24,11 +23,11 @@ import instagram from '../../assets/FooterAssets/instagram (1).png'
 import facebook from '../../assets/FooterAssets/facebook.png'
 import linkedIn from '../../assets/FooterAssets/linkedin (1).png'
 import telegram from '../../assets/FooterAssets/Telegram-removebg-preview.png'
-import leon from "../../assets/ProjectsAssets/Leon Project Image.png"
-import Trippy from "../../assets/ProjectsAssets/Trippy Project Image.png"
-import engBurger from "../../assets/ProjectsAssets/Eng Burger Project Image.png"
-import Edugar from "../../assets/ProjectsAssets/Edugar Image.png"
-import DashStack from "../../assets/ProjectsAssets/dashstack.png"
+import leon from "../../assets/ProjectsAssets/Leon Project Image.webp"
+import Trippy from "../../assets/ProjectsAssets/Trippy Project Image.webp"
+import engBurger from "../../assets/ProjectsAssets/Eng Burger Project Image.webp"
+import Edugar from "../../assets/ProjectsAssets/Edugar Image.webp"
+import DashStack from "../../assets/ProjectsAssets/dashstack.webp"
 import './Home.css'
 
 const Home = () => {

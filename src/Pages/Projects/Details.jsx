@@ -7,11 +7,11 @@ import instagram from '../../assets/FooterAssets/instagram (1).png'
 import facebook from '../../assets/FooterAssets/facebook.png'
 import linkedIn from '../../assets/FooterAssets/linkedin (1).png'
 import telegram from '../../assets/FooterAssets/Telegram-removebg-preview.png'
-import leon from "../../assets/ProjectsAssets/Leon Project Image.png"
-import Trippy from "../../assets/ProjectsAssets/Trippy Project Image.png"
-import engBurger from "../../assets/ProjectsAssets/Eng Burger Project Image.png"
-import Edugar from "../../assets/ProjectsAssets/Edugar Image.png"
-import DashStack from "../../assets/ProjectsAssets/dashstack.png"
+import leon from "../../assets/ProjectsAssets/Leon Project Image.webp"
+import Trippy from "../../assets/ProjectsAssets/Trippy Project Image.webp"
+import engBurger from "../../assets/ProjectsAssets/Eng Burger Project Image.webp"
+import Edugar from "../../assets/ProjectsAssets/Edugar Image.webp"
+import DashStack from "../../assets/ProjectsAssets/dashstack.webp"
 const projects = [
     {
         projectImage: leon,
