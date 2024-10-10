@@ -210,3 +210,15 @@
     }
   }
 }
+@media (max-width: 1199px) and (max-height: 880px) {
+  .detailsEnd {
+    display: none;
+  }
+  .projectDetails {
+    margin-bottom: 35%;
+  }
+  .projectImage {
+    width: 90% !important;
+    height: 100% !important;
+  }
+}

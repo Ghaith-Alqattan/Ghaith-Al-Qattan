@@ -176,3 +176,19 @@
     }
   }
 }
+@media (min-width: 1048px) and (max-width: 1199px) and (max-height: 1114px) {
+  .formContent .rightContact {
+    .name,
+    .email {
+      width: 47% !important;
+    }
+  }
+}
+@media (min-width: 993px) and (max-width: 1047px) {
+  .formContent .rightContact {
+    .name,
+    .email {
+      width: 46.5% !important;
+    }
+  }
+}
