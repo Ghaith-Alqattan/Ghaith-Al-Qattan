@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import './Hero.css'
 import dot from '../../assets/heroAssets/dot.png'
 import ThemeContext from '../Theme/Theme'
-import GhaithCv from '../../assets/heroAssets/Ghaith AlQattan Cv (1).pdf'
 const Hero = ({
     lines,
     gradiant,
@@ -37,7 +36,7 @@ const Hero = ({
                                     {desc}
                                 </p>
                                 <a
-                                    href={GhaithCv}
+                                    href="https://drive.google.com/file/d/1V0V_MP3D4yfGAMl0w0qKr4nv6VP_C8U3/view?usp=sharing"
                                     download
                                     className={theme === 'dark' ? 'darkButton darkFont cv' : 'cv'}
                                 >
